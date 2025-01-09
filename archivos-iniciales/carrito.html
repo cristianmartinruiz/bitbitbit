@@ -18,11 +18,10 @@
             <nav>
                 <ul>
                     <li>
-                        <a class="boton-volver" href="./index.html">
+                        <a class="boton-menu boton-volver" href="./index.html">
                             <i class="bi bi-arrow-return-left"></i>Seguir comprando
                         </a>
                     </li>
-
                     <li>
                         <a class="boton-menu boton-categoria active" href="./carrito.html">
                             <i class="bi bi-cart-fill"></i>Carrito 
@@ -37,12 +36,12 @@
         <main>
             <h2 class="titulo-principal">Carrito</h2>
             <div class="contenedor-carrito">
-                    <p class="carrito-vacio">Tu carrito esta vacio.<i class="bi bi-emoji-frown"></i></p>
+                    <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio.<i class="bi bi-emoji-frown"></i></p>
 
-                    <div class="carrito-productos disabled">
+                    <div id="carrito-productos" class="carrito-productos disabled">
                         
                         <div class="carrito-producto">
-                            <img src="./img/abrigos/01.jpg" alt="">
+                            <img class= "carrito-producto-imagen" src="./img/abrigos/01.jpg" alt="">
                             <div class="carrito-producto-titulo"> 
                                 <small>Titulo</small>
                                 <h3>Abrigo01</h3>
@@ -59,17 +58,10 @@
                                 <small>Subtotal</small>
                                 <p>1000</p>
                             </div>     
-                            <button class="carrito-prodcuto-eliminar"><i class="bi bi-trash-fill"></i></button>
-
+                            <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
                         </div>
-
-
-                    </div>
-
-                    <div class="carrito-productos">
-                        
                         <div class="carrito-producto">
-                            <img src="./img/abrigos/02.jpg" alt="">
+                            <img class="carrito-producto-imagen" src="./img/abrigos/02.jpg" alt="">
                             <div class="carrito-producto-titulo"> 
                                 <small>Titulo</small>
                                 <h3>Abrigo02</h3>
@@ -80,24 +72,22 @@
                             </div>
                             <div class="carrito-producto-precio"></div>
                                 <small>Precio</small>
-                                <p>2000</p>
+                                <p>1000</p>
                             </div>
                             <div class="carrito-producto-subtotal"></div>
                                 <small>Subtotal</small>
                                 <p>2000</p>
                             </div>     
                             <button class="carrito-prodcuto-eliminar"><i class="bi bi-trash-fill"></i></button>
-
                         </div>
 
 
                     </div>
 
-                    <div class="carrito-acciones disabled">
+                    <div id="carrito-acciones" class="carrito-acciones disabled">
                         <div class="carrito-acciones-izquierda">
                             <button class="carrito-acciones-vaciar">Vaciar carrito</button>
-                        </div>  
-                        
+                        </div>   
                         <div class="carrito-acciones-derecha">
                             <div class="carrito-acciones-total">
                                 <p>Total:</p>
@@ -107,7 +97,7 @@
                         </div>               
                     </div>
 
-                    <p class="carrito-comprado disabled">Muchas gracias por tu compra<i class="bi bi-emoji-laughing"></i></p>
+                    <p id="carrito-comprado" class="carrito-comprado">Muchas gracias por tu compra<i class="bi bi-emoji-laughing"></i></p>
                     
             </div>
         </main>
